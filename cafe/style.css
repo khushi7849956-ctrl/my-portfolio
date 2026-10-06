@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2b2118;
+    background: #fffaf5;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+header {
+    background: #2b2118;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.portfolio-btn {
+    display: inline-block;
+    padding: 10px 16px;
+
+    background: white;
+    color: #2b2118;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.portfolio-btn:hover {
+    background: #d6a76c;
+    color: white;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d6a76c;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(rgba(43, 33, 24, 0.72),
+            rgba(43, 33, 24, 0.72)),
+        linear-gradient(135deg, #6f4e37, #c49a6c);
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #d6a76c;
+    color: #2b2118;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    background: white;
+}
+
+
+/* COMMON SECTION */
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #a36b35;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+
+/* MENU */
+
+.menu {
+    background: #fffaf5;
+}
+
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-card strong {
+    color: #a36b35;
+    font-size: 20px;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    background: white;
+}
+
+.gallery-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-card {
+    height: 220px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(135deg,
+            #6f4e37,
+            #d6a76c);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 55px;
+
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: scale(1.04);
+}
+
+.gallery-card span {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: #fffaf5;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a36b35;
+}
+
+form button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2b2118;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #a36b35;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #2b2118;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #ddd;
+    margin-top: 7px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 70px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        font-size: 14px;
+    }
+        <a href="../index.html" class="portfolio-btn">← Back to Portfolio </a>
+
+}
